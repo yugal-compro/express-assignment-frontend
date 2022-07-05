@@ -5,9 +5,7 @@ async function showCourses(){
     for(let i=0;i<courses.length;i++){
         let trElement = document.createElement('tr');
         tableBody.append(trElement);
-         trElement.innerHTML = '<th>'+courses[i].subjectId+'</th> <th>'+courses[i].subjectName +'</th> <th>'+courses[i].courseName+'</th> <th>'+courses[i].dateCreated+'</th> <th>'+ courses[i].dateModified+'</th>';
-         trElement.innerHTML +='<button id="update-btn" class="btn btn-primary my-btn">Update</button>';
-         trElement.innerHTML += '<button id="delete-btn" class="btn btn-secondary my-btn">Delete</button>';
+         trElement.innerHTML = '<th>'+courses[i].subjectId+'</th> <th>'+courses[i].subjectName +'</th> <th>'+courses[i].courseName+'</th> <th>'+courses[i].dateCreated+'</th> <th>'+ courses[i].dateModified+'</th>'+'<button id="update-btn" class="btn btn-primary my-btn">Update</button>'+'<button id="delete-btn" class="btn btn-secondary my-btn">Delete</button>';
          let updateBtn = trElement.childNodes[9];
          let deleteBtn = trElement.childNodes[10];    
 
